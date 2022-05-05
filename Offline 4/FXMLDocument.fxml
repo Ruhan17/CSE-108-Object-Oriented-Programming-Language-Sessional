@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="892.0" prefWidth="333.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafx_offline.FXMLDocumentController">
+   <children>
+      <TextField fx:id="location" layoutX="14.0" layoutY="31.0" />
+      <Button layoutX="213.0" layoutY="31.0" mnemonicParsing="false" onAction="#chooseFileAction" text="Choose File" />
+      <Button layoutX="75.0" layoutY="81.0" mnemonicParsing="false" onAction="#resultButtonAction" text="Result" />
+      <TableView fx:id="resultView" layoutX="14.0" layoutY="127.0" prefHeight="757.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="word" prefWidth="150.0" text="WORD" />
+          <TableColumn fx:id="frequency" prefWidth="155.0" text="FREQUENCY" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
